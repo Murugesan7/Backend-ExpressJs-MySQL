@@ -56,7 +56,7 @@ app.get("/student/:id",(req,res) => {
 
 // add new student record
 
-app.post("/add",(req,res) => {
+app.post("/student",(req,res) => {
     let newItem = req.body;
 
     sqlConn.query("insert into students set ?",newItem,(err,result)=>{
